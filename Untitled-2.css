@@ -1,0 +1,26 @@
+@media(min-width:800px) and (max-width:2000px){
+    body{
+        background-color: aquamarine;
+    }
+    h1{
+        font-size: 30px;
+        font-weight:100;
+    }
+    .contenedor{
+        display: none;
+
+    }
+}
+
+@media(min-width:300px) and (max-width:799px){
+    body{
+        background-color: brown;
+    }
+    h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .tabla{
+        display: none;
+    }
+}
+
