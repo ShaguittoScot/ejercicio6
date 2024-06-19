@@ -1,4 +1,15 @@
-@media(min-width:800px) and (max-width:2000px){
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo{
+    text-align: center;
+}
+@media(min-width:790px) and (max-width:2000px){
+    .tarjetas{
+        display: none;
+    }
     body{
         background-color: aquamarine;
     }
@@ -6,21 +17,69 @@
         font-size: 30px;
         font-weight:100;
     }
-    .contenedor{
-        display: none;
-
+    table{
+        width: 80%;
+        border-collapse:collapse;
+        border: 3px solid darkcyan;
     }
+    th{
+        background-color: darkcyan;
+        color: azure;
+    }
+    td{
+        padding: 10px;
+        text-align: center;
+        border: 1px solid darkcyan;
+    }
+    tr:nth-child(even){
+        background-color: cadetblue;    
+    }    
+    .descripcion{
+        width: 40%;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
 }
 
-@media(min-width:300px) and (max-width:799px){
+@media(min-width:210px) and (max-width:790px){
     body{
-        background-color: brown;
+        background-color: aquamarine;
     }
     h1{
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    .tabla{
+    .contenedor{
         display: none;
+    }
+    .tarje{
+        padding: 30px;
+        margin: 10px;
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:rgba(0, 0, 255, 0.2);
+    }
+    .tarjetas{
+        margin: auto;
+        display:block;
+        height: auto;
+        width: auto;
+        justify-content: space-between;
+        align-items:normal;
+    }
+    .tarjeta1{
+        background-color: cadetblue;
+    }
+    .tarjeta2{
+        background-color: cornflowerblue;
+    }
+    .tarjeta3{
+        background-color: darkorange;
     }
 }
 
